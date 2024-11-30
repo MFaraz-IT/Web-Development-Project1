@@ -1,0 +1,270 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+nav ul li:hover {
+    background: #00bcd4;
+    border-radius: 5px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    width: 100vw;
+    height: 50vh;
+    background-image:radial-gradient(at center, #e6d7e26e, #77777872), url("./imgs/grosary\ story.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    font-size: 3.2rem;
+    text-align: center;
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    width: 100vw;
+   /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=f4f4f4&c2=a59e9e&gt=l&gd=dtt
+    */
+    background: linear-gradient(180deg, #f4f4f476, #a59e9e61),rgba(144, 238, 144, 0.155);
+}
+.container{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+.About h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.About p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Categories Section */
+.categories {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+}
+.categories h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Individual Category Row */
+.category-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.categories h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+/* Individual Category Styling */
+.category {
+    flex: 1 1 calc(25% - 20px); /* Ensures 4 items per row with proper spacing */
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Product Images */
+.category img {
+    width: 100%;
+    height: 100%; /* Ensures inline display with natural aspect ratio */
+    object-fit:fill; /* Keeps the image fully visible inside the box */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Hover Effects */
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Titles */
+.category h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+.feedback h2{
+   font-size: 2.5rem;
+   text-align: center;
+}
+
+/* Feedback Form */
+form {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+form button {
+    position: absolute;
+    display: inline;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 150px;
+    justify-content: center;
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%,-50%);
+}
+
+form button:hover {
+    background: #218838;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+footer .footer-links a {
+    color: #00bcd4;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+/* index2 styling */
+.buy h2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+
+@media(max-width: 500px) {
+    html{
+        font-size: 40%;
+    }
+    header {
+        height: 40vw;
+    }
+    .About{
+        height: 40vw;
+    }
+    form  button{
+        width: 100px;
+    } 
+}
+@media (max-width:720px) and (min-width:500px) {
+    html{
+        font-size: 70%;
+    }
+    header {
+        height: 40vh;
+    }
+    .About{
+        height: 40vh;
+    }
+    form  button{
+        width: 150px;
+    } 
+}
+@media (max-width:1024px) and (min-width:720px){
+    html{
+        font-size: 70%;
+    }
+    header {
+        height: 30vh;
+    }
+    .About{
+        height: 30vh;
+    }
+      
+}

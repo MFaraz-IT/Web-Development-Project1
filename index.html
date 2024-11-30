@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="index2.html">Buy</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <h1>Welcome to ApnaStore</h1>
+    </header>
+    
+    <!-- About Us Section -->
+    <section class="About">
+        <div class="container">        
+            <h1>About Us</h1>
+            <p>Welcome to ApnaStore! We offer the freshest produce, quality products, and excellent service to meet your everyday needs. Your satisfaction is our priority.</p>
+        </div>    
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="categories" id="products">
+        <h1>Our Categories</h1>
+
+        <!-- Fruits -->
+        <h2>Fruits</h2>
+        <div class="category-row">
+            <div class="category">
+                <a href="index2.html"></a>
+                <img src="./imgs/apple.jpg" alt="Apple">
+            </a>
+                <p>Price: RS 200 per kg</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/banana.jpg" alt="Banana">
+            </a>
+                <p>Price: RS 100 per Dozen</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="imgs/oranges.jpg" alt="Orange">
+            </a>
+                <p>Price: RS 100 per kg</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/mangoes.jpg" alt="Mango">
+            </a>
+                <p>Price: RS 200 per kg</p>
+            </div>
+        </div>
+
+        <!-- Vegetables -->
+        <h2>Vegetables</h2>
+        <div class="category-row">
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/carrots.jpg" alt="Carrot">
+            </a>
+                <p>Price: RS 120 per kg</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/potatos.jpg" alt="Potato">
+            </a>
+                <p>Price: RS 100 per kg</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/tomatoes.jpg" alt="Tomato">
+            </a>
+                <p>Price: RS 110 per kg</p>
+            </div>
+            <div class="category">
+                <a href="index2.html">
+                <img src="./imgs/cocumber.jpg" alt="Cucumber">
+            </a>
+                <p>Price: RS 90 per kg</p>
+            </div>
+        </div>
+
+        <!-- Dairy Products -->
+        <h2>Dairy Products</h2>
+        <div class="category-row">
+           <div class="category">
+            <a href="index2.html">
+             <img src="./imgs/milk.jpg" alt="Milk">
+            </a>
+             <p>Price: RS 200 per liter</p>
+           </div>
+           <div class="category">
+            <a href="index2.html">
+                <img src="./imgs/youghurt.jpg" alt="Yogurt">
+            </a>
+                <p>Price: RS 350 per kg</p>
+           </div>
+           <div class="category">
+            <a href="index2.html">
+                  <img src="./imgs/butter.jpg" alt="Butter">
+                </a>
+                  <p>Price:RS 90 per 250g</p>
+           </div>
+           <div class="category">
+            <a href="index2.html">
+                    <img src="./imgs/ice cream.jpg" alt="Ice cream">
+                </a>
+                    <p>Price: RS 400 per liter</p>
+           </div>
+        </div>
+    </section>
+
+    <!-- Feedback Form Section -->
+    <section id="feedback" class="feedback">
+        <h2>Give Your Feedback</h2>
+        <form id="feedbackForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="purpose">Purpose:</label>
+            <select id="purpose" name="purpose" required>
+                <option value="" disabled selected>Select a purpose</option>
+                <option value="Product review">Product Review</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Contact us">Contact Us</option>
+            </select><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a> | 
+            <a href="#">Products</a> | 
+            <a href="index2.html">Buy</a>
+        </div>
+        <p>&copy; 2024 ApnaStore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
